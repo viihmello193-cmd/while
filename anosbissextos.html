@@ -1,0 +1,16 @@
+<script>
+    var inicio = parseInt(prompt("Digite o ano inicial:"));
+    var final = parseInt(prompt("Digite o ano final:"));
+    var ano = inicio;
+    var quantidade = 0;
+
+    while (ano <= final) {
+        if (ano % 4 == 0) {
+            quantidade = quantidade + 1;
+        }
+
+        ano = ano + 1;
+    }
+
+    document.write("Quantidade de anos bissextos: " + quantidade);
+</script>

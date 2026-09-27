@@ -1,0 +1,16 @@
+<script>
+    var i=1;
+    var anonasc, anoatual, idade;
+    while(i<=6){
+        anonasc = parseFloat(prompt("Entre com a data de nascimento "+i+"o. usuario"));
+        anoatual = parseFloat(prompt("Entre com ano atual"));
+        idade = anoatual - anonasc;
+
+        if(idade >= 18){
+            document.write("Usuario "+i+" : Maior de idade<br>");
+        }else{
+            document.write("Usuario "+i+": Menor de idade<br>");
+        }
+        i++;
+    }
+</script>
